@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+  zola sample page
+  </title>
+  <link href="https://ymat2.github.io/zola-sample-dev/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:200,400,600,800&display=swap&subset=japanese" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <header class="header">
+      <a href="https://ymat2.github.io/zola-sample-dev">zola sample page</a>
+    </header>
+    <nav class="navbar">
+      <ul class="nav_wrapper">
+        <li class="nav_item"><a href="https://ymat2.github.io/zola-sample-dev">Home</a></li>
+        <li class="nav_item"><a href="https://ymat2.github.io/zola-sample-dev/about/">About</a></li>
+        <li class="nav_item"><a href="https://ymat2.github.io/zola-sample-dev/blog/">Blog</a></li>
+        <li class="nav_item"><a href="https://ymat2.github.io/zola-sample-dev/slide/">Slide</a></li>
+        <li class="nav_item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="section">
+      <main>
+      
+<h1 class="title">
+  Markdown
+</h1>
+<p class="subtitle"><strong></strong></p>
+<p><a href="https://commonmark.org/">https://commonmark.org/</a></p>
+<h2 id="headings">Headings</h2>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span style="color:#8fa1b3;"># h1 Heading
+</span><span style="color:#8fa1b3;">## h2 Heading
+</span><span style="color:#8fa1b3;">### h3 Heading
+</span><span style="color:#8fa1b3;">#### h4 Heading
+</span><span style="color:#8fa1b3;">##### h5 Heading
+</span><span style="color:#8fa1b3;">###### h6 Heading
+</span></code></pre>
+<h1 id="h1-heading">h1 Heading</h1>
+<h2 id="h2-heading">h2 Heading</h2>
+<h3 id="h3-heading">h3 Heading</h3>
+<h4 id="h4-heading">h4 Heading</h4>
+<h5 id="h5-heading">h5 Heading</h5>
+<h6 id="h6-heading">h6 Heading</h6>
+<h2 id="horizontal-rules">Horizontal Rules</h2>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span style="background-color:#4f5b66;color:#c0c5ce;">___
+</span><span>
+</span><span style="background-color:#4f5b66;color:#c0c5ce;">---
+</span><span>
+</span><span style="background-color:#4f5b66;color:#c0c5ce;">***
+</span></code></pre>
+<hr />
+<hr />
+<hr />
+<h2 id="emphasis">Emphasis</h2>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span style="font-weight:bold;color:#ebcb8b;">**This is bold text**
+</span><span>
+</span><span style="font-weight:bold;color:#ebcb8b;">__This is bold text__
+</span><span>
+</span><span style="font-style:italic;color:#b48ead;">*This is italic text*
+</span><span>
+</span><span style="font-style:italic;color:#b48ead;">_This is italic text_
+</span><span>
+</span><span>~~Strikethrough~~
+</span></code></pre>
+<p><strong>This is bold text</strong></p>
+<p><strong>This is bold text</strong></p>
+<p><em>This is italic text</em></p>
+<p><em>This is italic text</em></p>
+<p><del>Strikethrough</del></p>
+<h2 id="blockquotes">Blockquotes</h2>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span style="color:#d08770;">&gt; Blockquotes can also be nested...
+</span><span style="color:#d08770;">&gt;&gt; ...by using additional greater-than signs right next to each other...
+</span><span style="color:#d08770;">&gt; &gt; &gt; ...or with spaces between arrows.
+</span></code></pre>
+<blockquote>
+<p>Blockquotes can also be nested...</p>
+<blockquote>
+<p>...by using additional greater-than signs right next to each other...</p>
+<blockquote>
+<p>...or with spaces between arrows.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="lists">Lists</h2>
+<h3 id="unordered">Unordered</h3>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span style="color:#bf616a;">+ Create a list by starting a line with </span><span style="color:#a3be8c;">`+`</span><span style="color:#bf616a;">, </span><span style="color:#a3be8c;">`-`</span><span style="color:#bf616a;">, or </span><span style="color:#a3be8c;">`*`
+</span><span style="color:#bf616a;">+ Sub-lists are made by indenting 2 spaces:
+</span><span style="color:#bf616a;">  - Marker character change forces new list start:
+</span><span style="color:#bf616a;">    * Ac tristique libero volutpat at
+</span><span style="color:#bf616a;">    + Facilisis in pretium nisl aliquet
+</span><span style="color:#bf616a;">    - Nulla volutpat aliquam velit
+</span><span style="color:#bf616a;">+ Very easy!
+</span></code></pre>
+<ul>
+<li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
+<li>Sub-lists are made by indenting 2 spaces:
+<ul>
+<li>Marker character change forces new list start:
+<ul>
+<li>Ac tristique libero volutpat at</li>
+</ul>
+<ul>
+<li>Facilisis in pretium nisl aliquet</li>
+</ul>
+<ul>
+<li>Nulla volutpat aliquam velit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Very easy!</li>
+</ul>
+<h3 id="ordered">Ordered</h3>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span style="color:#bf616a;">1. Lorem ipsum dolor sit amet
+</span><span style="color:#bf616a;">2. Consectetur adipiscing elit
+</span><span style="color:#bf616a;">3. Integer molestie lorem at massa
+</span><span style="color:#bf616a;">
+</span><span style="color:#bf616a;">
+</span><span style="color:#bf616a;">1. You can use sequential numbers...
+</span><span style="color:#bf616a;">1. ...or keep all the numbers as </span><span style="color:#a3be8c;">`1.`
+</span></code></pre>
+<ol>
+<li>
+<p>Lorem ipsum dolor sit amet</p>
+</li>
+<li>
+<p>Consectetur adipiscing elit</p>
+</li>
+<li>
+<p>Integer molestie lorem at massa</p>
+</li>
+<li>
+<p>You can use sequential numbers...</p>
+</li>
+<li>
+<p>...or keep all the numbers as <code>1.</code></p>
+</li>
+</ol>
+<h3 id="start-numbering-with-offset">Start numbering with offset:</h3>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span style="color:#bf616a;">57. foo
+</span><span style="color:#bf616a;">1. bar
+</span></code></pre>
+<ol start="57">
+<li>foo</li>
+<li>bar</li>
+</ol>
+<h3 id="task-list">Task list:</h3>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span style="color:#bf616a;">- [ ] to be done
+</span><span style="color:#bf616a;">- [x] done!
+</span></code></pre>
+<ul>
+<li><input disabled="" type="checkbox"/>
+to be done</li>
+<li><input disabled="" type="checkbox" checked=""/>
+done!</li>
+</ul>
+<h2 id="code">Code</h2>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span>Inline </span><span style="color:#a3be8c;">`code`
+</span></code></pre>
+<p>Inline <code>code</code></p>
+<h3 id="indented-code">Indented code</h3>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span>    // Some comments
+</span><span>    line 1 of code
+</span><span>    line 2 of code
+</span><span>    line 3 of code
+</span></code></pre>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>// Some comments
+</span><span>line 1 of code
+</span><span>line 2 of code
+</span><span>line 3 of code
+</span></code></pre>
+<h3 id="block-code-fences">Block code "fences"</h3>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span>```
+</span><span>Sample text here...
+</span><span>```
+</span></code></pre>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>Sample text here...
+</span></code></pre>
+<h3 id="syntax-highlighting">Syntax highlighting</h3>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span>``` </span><span style="color:#d08770;">js
+</span><span style="color:#b48ead;">var </span><span style="color:#bf616a;">foo </span><span>= </span><span style="color:#b48ead;">function </span><span>(bar) {
+</span><span>  </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">bar</span><span>++;
+</span><span>};
+</span><span>
+</span><span>console.</span><span style="color:#96b5b4;">log</span><span>(</span><span style="color:#bf616a;">foo</span><span>(</span><span style="color:#d08770;">5</span><span>));
+</span><span>```
+</span></code></pre>
+<pre data-lang="js" style="background-color:#2b303b;color:#c0c5ce;" class="language-js "><code class="language-js" data-lang="js"><span style="color:#b48ead;">var </span><span style="color:#8fa1b3;">foo </span><span>= </span><span style="color:#b48ead;">function </span><span>(</span><span style="color:#bf616a;">bar</span><span>) {
+</span><span>  </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">bar</span><span>++;
+</span><span>};
+</span><span>
+</span><span style="color:#ebcb8b;">console</span><span>.</span><span style="color:#96b5b4;">log</span><span>(</span><span style="color:#8fa1b3;">foo</span><span>(</span><span style="color:#d08770;">5</span><span>));
+</span></code></pre>
+<h2 id="tables">Tables</h2>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span>| Option | No.    | Description  |
+</span><span>| ------ | -----: | :----------- |
+</span><span>| data   |     01 | path to data files to supply the data that will be passed into templates. |
+</span><span>| engine |     02 | engine to be used for processing templates. Handlebars is the default. |
+</span><span>| ext    |     03 | extension to be used for dest files. |
+</span></code></pre>
+<table><thead><tr><th>Option</th><th style="text-align: right">No.</th><th style="text-align: left">Description</th></tr></thead><tbody>
+<tr><td>data</td><td style="text-align: right">01</td><td style="text-align: left">path to data files to supply the data that will be passed into templates.</td></tr>
+<tr><td>engine</td><td style="text-align: right">02</td><td style="text-align: left">engine to be used for processing templates. Handlebars is the default.</td></tr>
+<tr><td>ext</td><td style="text-align: right">03</td><td style="text-align: left">extension to be used for dest files.</td></tr>
+</tbody></table>
+<h2 id="links">Links</h2>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span>Auto-link: https://github.com/
+</span><span>
+</span><span>Explicit link: </span><span style="color:#d08770;">&lt;https://github.com/&gt;
+</span><span>
+</span><span style="color:#d08770;">[link text](https://github.com/)
+</span><span>
+</span><span style="color:#d08770;">[link with title](https://github.com/ </span><span>&quot;</span><span style="color:#bf616a;">title text!</span><span>&quot;</span><span style="color:#d08770;">)
+</span></code></pre>
+<p>Auto-link: https://github.com/</p>
+<p>Explicit link: <a href="https://github.com/">https://github.com/</a></p>
+<p><a href="https://github.com/">link text</a></p>
+<p><a href="https://github.com/" title="title text!">link with title</a></p>
+<h2 id="images">Images</h2>
+<pre data-lang="md" style="background-color:#2b303b;color:#c0c5ce;" class="language-md "><code class="language-md" data-lang="md"><span>![Minion](https://octodex.github.com/images/minion.png)
+</span></code></pre>
+<p><img src="https://octodex.github.com/images/minion.png" alt="Minion" /></p>
+
+
+      </main>
+    </section>
+    <footer class="footer">
+      <p>© Yuki Matsuda, 2025</p>
+    </footer>
+  </div>
+</body>
+
+</html>

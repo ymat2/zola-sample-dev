@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sample Slide</title>
+
+		<link rel="stylesheet" href="https://github.com/hakimel/reveal.js/blob/master/dist/reset.css">
+		<link rel="stylesheet" href="https://github.com/hakimel/reveal.js/blob/master/dist/reveal.css">
+		<link rel="stylesheet" href="https://github.com/hakimel/reveal.js/blob/master/dist/theme/black.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://github.com/hakimel/reveal.js/blob/master/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section data-markdown>
+        <h2 id="hello-there">Hello, There</h2>
+<p>This presentation will show you examples of what you can do with Quarto and <a href="https://revealjs.com">Reveal.js</a>, including:</p>
+<ul>
+<li>Presenting code and LaTeX equations</li>
+<li>Including computations in slide output</li>
+<li>Image, video, and iframe backgrounds</li>
+<li>Fancy transitions and animations</li>
+<li>Activating scroll view</li>
+</ul>
+<p>...and much more</p>
+<h2 id="pretty-code">Pretty Code</h2>
+<ul>
+<li>Over 20 syntax highlighting themes available</li>
+<li>Default theme optimized for accessibility</li>
+</ul>
+<pre data-lang="r" style="background-color:#2b303b;color:#c0c5ce;" class="language-r "><code class="language-r" data-lang="r"><span style="color:#65737e;"># Define a server for the Shiny app
+</span><span style="color:#b48ead;">function</span><span>(</span><span style="color:#bf616a;">input</span><span>, </span><span style="color:#bf616a;">output</span><span>) {
+</span><span>
+</span><span>  </span><span style="color:#65737e;"># Fill in the spot we created for a plot
+</span><span>  output</span><span style="color:#b48ead;">$</span><span>phonePlot &lt;- </span><span style="color:#bf616a;">renderPlot</span><span>({
+</span><span>    </span><span style="color:#65737e;"># Render a barplot
+</span><span>  })
+</span><span>}
+</span></code></pre>
+<h2 id="code-animations">Code Animations</h2>
+<ul>
+<li>Over 20 syntax highlighting themes available</li>
+<li>Default theme optimized for accessibility</li>
+</ul>
+<pre data-lang="r" style="background-color:#2b303b;color:#c0c5ce;" class="language-r "><code class="language-r" data-lang="r"><span style="color:#65737e;"># Define a server for the Shiny app
+</span><span style="color:#b48ead;">function</span><span>(</span><span style="color:#bf616a;">input</span><span>, </span><span style="color:#bf616a;">output</span><span>) {
+</span><span>
+</span><span>  </span><span style="color:#65737e;"># Fill in the spot we created for a plot
+</span><span>  output</span><span style="color:#b48ead;">$</span><span>phonePlot &lt;- </span><span style="color:#bf616a;">renderPlot</span><span>({
+</span><span>    </span><span style="color:#65737e;"># Render a barplot
+</span><span>    </span><span style="color:#96b5b4;">barplot</span><span>(WorldPhones[,input</span><span style="color:#b48ead;">$</span><span>region]*</span><span style="color:#d08770;">1000</span><span>,
+</span><span>            </span><span style="color:#bf616a;">main</span><span>=input</span><span style="color:#b48ead;">$</span><span>region,
+</span><span>            </span><span style="color:#bf616a;">ylab</span><span>=&quot;</span><span style="color:#a3be8c;">Number of Telephones</span><span>&quot;,
+</span><span>            </span><span style="color:#bf616a;">xlab</span><span>=&quot;</span><span style="color:#a3be8c;">Year</span><span>&quot;)
+</span><span>  })
+</span><span>}
+</span></code></pre>
+<h2 id="line-highlighting">Line Highlighting</h2>
+<ul>
+<li>Highlight specific lines for emphasis</li>
+<li>Incrementally highlight additional lines</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>import numpy as np
+</span><span>import matplotlib.pyplot as plt
+</span><span>
+</span><span>r = np.arange(0, 2, 0.01)
+</span><span>theta = 2 * np.pi * r
+</span><span>fig, ax = plt.subplots(subplot_kw={&#39;projection&#39;: &#39;polar&#39;})
+</span><span>ax.plot(theta, r)
+</span><span>ax.set_rticks([0.5, 1, 1.5, 2])
+</span><span>ax.grid(True)
+</span><span>plt.show()
+</span></code></pre>
+
+        </section>
+			</div>
+		</div>
+
+		<script src="https://github.com/hakimel/reveal.js/blob/master/dist/reveal.js"></script>
+		<script src="https://github.com/hakimel/reveal.js/blob/master/plugin/notes/notes.js"></script>
+		<script src="https://github.com/hakimel/reveal.js/blob/master/plugin/markdown/markdown.js"></script>
+		<script src="https://github.com/hakimel/reveal.js/blob/master/plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
