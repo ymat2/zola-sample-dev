@@ -1,4 +1,4 @@
-base_url = "https://example.com"
+base_url = "https://ymat2.github.io/zola-sample-dev"
 title = "zola sample page"
 author = "Yuki Matsuda"
 compile_sass = true

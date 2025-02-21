@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://ymat2.github.io/zola-sample-dev/sitemap.xml

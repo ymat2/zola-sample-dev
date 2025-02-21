@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+  zola sample page
+  </title>
+  <link href="/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:200,400,600,800&display=swap&subset=japanese" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <header class="header">
+      <a href="https://ymat2.github.io/zola-sample-dev">zola sample page</a>
+    </header>
+    <nav class="navbar">
+      <ul class="nav_wrapper">
+        <li class="nav_item"><a href="https://ymat2.github.io/zola-sample-dev">Home</a></li>
+        <li class="nav_item"><a href="https://ymat2.github.io/zola-sample-dev/about/">About</a></li>
+        <li class="nav_item"><a href="https://ymat2.github.io/zola-sample-dev/blog/">Blog</a></li>
+        <li class="nav_item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="section">
+      <main>
+      
+<h1 class="title">
+  Markdown
+</h1>
+<p class="subtitle"><strong></strong></p>
+<ul>
+<li><a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a></li>
+<li><a href="https://github.github.com/gfm/">https://github.github.com/gfm/</a></li>
+</ul>
+<h1 id="h1-heading">h1 Heading</h1>
+<h2 id="h2-heading">h2 Heading</h2>
+<h3 id="h3-heading">h3 Heading</h3>
+<h4 id="h4-heading">h4 Heading</h4>
+<h5 id="h5-heading">h5 Heading</h5>
+<h6 id="h6-heading">h6 Heading</h6>
+<h2 id="horizontal-rules">Horizontal Rules</h2>
+<hr />
+<hr />
+<hr />
+<h2 id="typographic-replacements">Typographic replacements</h2>
+<p>(c) (C) (r) (R) (tm) (TM) (p) (P) +-</p>
+<p>test.. test... test..... test?..... test!....</p>
+<p>!!!!!! ???? ,,  -- ---</p>
+<p>"Smartypants, double quotes" and 'single quotes'</p>
+<h2 id="emphasis">Emphasis</h2>
+<p><strong>This is bold text</strong></p>
+<p><strong>This is bold text</strong></p>
+<p><em>This is italic text</em></p>
+<p><em>This is italic text</em></p>
+<p><del>Strikethrough</del></p>
+<h2 id="blockquotes">Blockquotes</h2>
+<blockquote>
+<p>Blockquotes can also be nested...</p>
+<blockquote>
+<p>...by using additional greater-than signs right next to each other...</p>
+<blockquote>
+<p>...or with spaces between arrows.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="lists">Lists</h2>
+<p>Unordered</p>
+<ul>
+<li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
+<li>Sub-lists are made by indenting 2 spaces:
+<ul>
+<li>Marker character change forces new list start:
+<ul>
+<li>Ac tristique libero volutpat at</li>
+</ul>
+<ul>
+<li>Facilisis in pretium nisl aliquet</li>
+</ul>
+<ul>
+<li>Nulla volutpat aliquam velit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Very easy!</li>
+</ul>
+<p>Ordered</p>
+<ol>
+<li>
+<p>Lorem ipsum dolor sit amet</p>
+</li>
+<li>
+<p>Consectetur adipiscing elit</p>
+</li>
+<li>
+<p>Integer molestie lorem at massa</p>
+</li>
+<li>
+<p>You can use sequential numbers...</p>
+</li>
+<li>
+<p>...or keep all the numbers as <code>1.</code></p>
+</li>
+</ol>
+<p>Start numbering with offset:</p>
+<ol start="57">
+<li>foo</li>
+<li>bar</li>
+</ol>
+<p>Task list:</p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+to be done</li>
+<li><input disabled="" type="checkbox" checked=""/>
+done!</li>
+</ul>
+<h2 id="code">Code</h2>
+<p>Inline <code>code</code></p>
+<p>Indented code</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>// Some comments
+</span><span>line 1 of code
+</span><span>line 2 of code
+</span><span>line 3 of code
+</span></code></pre>
+<p>Block code "fences"</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>Sample text here...
+</span></code></pre>
+<p>Syntax highlighting</p>
+<pre data-lang="js" style="background-color:#2b303b;color:#c0c5ce;" class="language-js "><code class="language-js" data-lang="js"><span style="color:#b48ead;">var </span><span style="color:#8fa1b3;">foo </span><span>= </span><span style="color:#b48ead;">function </span><span>(</span><span style="color:#bf616a;">bar</span><span>) {
+</span><span>  </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">bar</span><span>++;
+</span><span>};
+</span><span>
+</span><span style="color:#ebcb8b;">console</span><span>.</span><span style="color:#96b5b4;">log</span><span>(</span><span style="color:#8fa1b3;">foo</span><span>(</span><span style="color:#d08770;">5</span><span>));
+</span></code></pre>
+<h2 id="tables">Tables</h2>
+<table><thead><tr><th>Option</th><th>Description</th></tr></thead><tbody>
+<tr><td>data</td><td>path to data files to supply the data that will be passed into templates.</td></tr>
+<tr><td>engine</td><td>engine to be used for processing templates. Handlebars is the default.</td></tr>
+<tr><td>ext</td><td>extension to be used for dest files.</td></tr>
+</tbody></table>
+<p>Right aligned columns</p>
+<table><thead><tr><th style="text-align: right">Option</th><th style="text-align: right">Description</th></tr></thead><tbody>
+<tr><td style="text-align: right">data</td><td style="text-align: right">path to data files to supply the data that will be passed into templates.</td></tr>
+<tr><td style="text-align: right">engine</td><td style="text-align: right">engine to be used for processing templates. Handlebars is the default.</td></tr>
+<tr><td style="text-align: right">ext</td><td style="text-align: right">extension to be used for dest files.</td></tr>
+</tbody></table>
+<h2 id="links">Links</h2>
+<p>Auto-link: https://github.com/</p>
+<p>Explicit link: <a href="https://github.com/">https://github.com/</a></p>
+<p><a href="https://github.com/">link text</a></p>
+<p><a href="https://github.com/" title="title text!">link with title</a></p>
+<h2 id="images">Images</h2>
+<p><img src="https://octodex.github.com/images/minion.png" alt="Minion" />
+<img src="https://octodex.github.com/images/stormtroopocat.jpg" alt="Stormtroopocat" title="The Stormtroopocat" /></p>
+<p>Like links, Images also have a footnote style syntax</p>
+<p><img src="https://octodex.github.com/images/dojocat.jpg" alt="Alt text" title="The Dojocat" /></p>
+<p>With a reference later in the document defining the URL location:</p>
+
+
+      </main>
+    </section>
+    <footer class="footer">
+      <p>© Yuki Matsuda, 2025</p>
+    </footer>
+  </div>
+</body>
+
+</html>

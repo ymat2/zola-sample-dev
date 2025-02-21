@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+  zola sample page
+  </title>
+  <link href="/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:200,400,600,800&display=swap&subset=japanese" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <header class="header">
+      <a href="https://ymat2.github.io/zola-sample-dev">zola sample page</a>
+    </header>
+    <nav class="navbar">
+      <ul class="nav_wrapper">
+        <li class="nav_item"><a href="https://ymat2.github.io/zola-sample-dev">Home</a></li>
+        <li class="nav_item"><a href="https://ymat2.github.io/zola-sample-dev/about/">About</a></li>
+        <li class="nav_item"><a href="https://ymat2.github.io/zola-sample-dev/blog/">Blog</a></li>
+        <li class="nav_item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="section">
+      <main>
+      
+<h1 class="title">
+  CSSの効き方
+</h1>
+<p class="subtitle"><strong></strong></p>
+<h2 id="font-weight">Font-weight</h2>
+<div style="font-weight:normal;">
+font-weight: normal; ふつう
+</div>
+<div style="font-weight:bold;">
+font-weight: bold; ふとい
+</div>
+<div style="font-weight:200;">
+font-weight: 200; ほそい
+</div>
+<div style="font-weight:400;">
+font-weight: 400; ふつう
+</div>
+<div style="font-weight:600;">
+font-weight: 600; ふとめ
+</div>
+<div style="font-weight:800;">
+font-weight: 800; ふとい
+</div>
+<h2 id="font-family">Font family</h2>
+<h3 id="he-wen-huonto">和文フォント</h3>
+<div style="font-family: sans-serif;">
+font-family: sans-serif; 総称サンセリフ, *総称サンセリフ*, **総称サンセリフ**
+</div>
+<div style="font-family: system-ui;">
+font-family: system-ui; システム UI, *システム UI*, **システム UI**
+</div>
+<div style="font-family: 'Yu Gothic';">
+font-family: 'Yu Gothic'; 游ゴシック, *游ゴシック*, **游ゴシック**
+</div>
+<div style="font-family: 'Yu Gothic Medium';">
+font-family: 'Yu Gothic Medium'; 游ゴ・ミディアム, *游ゴ・ミディアム*, **游ゴ・ミディアム**
+</div>
+<div style="font-family: 'Noto Sans JP';">
+font-family: 'Noto Sans JP'; ノー豆腐, *ノー豆腐*, **ノー豆腐**
+</div>
+<div style="font-family: 'BIZ UDGothic';">
+font-family: 'BIZ UDGothic'; BIZ UD ゴシック, *BIZ UD ゴシック*, **BIZ UD ゴシック**
+</div>
+<h3 id="ou-wen-huonto">欧文フォント</h3>
+<div style="font-family: 'Helvetica';">
+font-family: 'Helvetica'; Helvetica, *Helvetica*, **Helvetica**
+</div>
+<div style="font-family: 'Segoe UI';">
+font-family: 'Segoe UI'; Segoe UI, *Segoe UI*, **Segoe UI**
+</div>
+<div style="font-family: 'Arial';">
+font-family: 'Arial'; Arial, *Arial*, **Arial**
+</div>
+<div style="font-family: 'Avenir Next LT Pro';">
+font-family: 'Avenir Next LT Pro'; Avenir Next, *Avenir Next*, **Avenir Next**
+</div>
+<h2 id="h2nonakano-code-yao-su">h2のなかの <code>code</code> 要素</h2>
+<p>こっちは普通の <code>inline code</code> の見た目。</p>
+<h2 id="syntax-highlight">Syntax highlight</h2>
+<h3 id="shell">Shell</h3>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">git</span><span> add .
+</span><span style="color:#bf616a;">git</span><span> commit</span><span style="color:#bf616a;"> -m </span><span>&quot;</span><span style="color:#a3be8c;">Initial commit</span><span>&quot;
+</span><span style="color:#bf616a;">git</span><span> push origin main
+</span><span>
+</span><span style="color:#bf616a;">python3</span><span> sample.py</span><span style="color:#bf616a;"> --input</span><span> sample.out</span><span style="color:#bf616a;"> --output</span><span> sample.in
+</span><span style="color:#bf616a;">brew</span><span> install python3
+</span><span style="color:#bf616a;">sudo</span><span> apt update &amp;&amp; </span><span style="color:#bf616a;">sudo</span><span> apt upgrade
+</span><span style="color:#bf616a;">pyenv --version
+</span></code></pre>
+<h3 id="bash">Bash</h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;">#!/bin/bash
+</span><span>
+</span><span style="color:#65737e;">###### CONFIG
+</span><span style="color:#bf616a;">ACCEPTED_HOSTS</span><span>=&quot;</span><span style="color:#a3be8c;">/root/.hag_accepted.conf</span><span>&quot;
+</span><span style="color:#bf616a;">BE_VERBOSE</span><span>=</span><span style="color:#a3be8c;">false
+</span><span>
+</span><span style="color:#b48ead;">if </span><span style="color:#96b5b4;">[ </span><span>&quot;$</span><span style="color:#bf616a;">UID</span><span>&quot; </span><span style="color:#bf616a;">-ne</span><span> 0 </span><span style="color:#96b5b4;">]
+</span><span style="color:#b48ead;">then
+</span><span> </span><span style="color:#96b5b4;">echo </span><span>&quot;</span><span style="color:#a3be8c;">Superuser rights required</span><span>&quot;
+</span><span> </span><span style="color:#96b5b4;">exit</span><span> 2
+</span><span style="color:#b48ead;">fi
+</span><span>
+</span><span style="color:#8fa1b3;">genApacheConf</span><span>(){
+</span><span> </span><span style="color:#96b5b4;">echo </span><span style="color:#bf616a;">-e </span><span>&quot;</span><span style="color:#a3be8c;"># Host </span><span>$</span><span style="color:#a3be8c;">{</span><span style="color:#bf616a;">HOME_DIR</span><span style="color:#a3be8c;">}</span><span>$</span><span style="color:#bf616a;">1</span><span style="color:#a3be8c;">/</span><span>$</span><span style="color:#bf616a;">2</span><span style="color:#a3be8c;"> :</span><span>&quot;
+</span><span>}
+</span><span>
+</span><span style="color:#96b5b4;">echo </span><span>&#39;</span><span style="color:#a3be8c;">&quot;quoted&quot;</span><span>&#39; | </span><span style="color:#bf616a;">tr -d </span><span style="color:#96b5b4;">\&quot; </span><span>&gt; text.txt
+</span></code></pre>
+<h3 id="markdown">Markdown</h3>
+<pre data-lang="markdown" style="background-color:#2b303b;color:#c0c5ce;" class="language-markdown "><code class="language-markdown" data-lang="markdown"><span style="color:#8fa1b3;"># hello world
+</span><span>
+</span><span>you can write text </span><span style="color:#d08770;">[with links](http://example.com)</span><span> inline or </span><span style="color:#d08770;">[link references][1]</span><span>.
+</span><span>
+</span><span style="color:#bf616a;">* one </span><span style="font-style:italic;color:#b48ead;">_thing_</span><span style="color:#bf616a;"> has </span><span style="font-style:italic;color:#b48ead;">*em*</span><span style="color:#bf616a;">phasis
+</span><span style="color:#bf616a;">* two </span><span style="font-weight:bold;color:#ebcb8b;">__things__</span><span style="color:#bf616a;"> are </span><span style="font-weight:bold;color:#ebcb8b;">**bold**
+</span><span style="color:#bf616a;">
+</span><span style="color:#d08770;">[1]: http://example.com
+</span><span>
+</span><span style="background-color:#4f5b66;color:#c0c5ce;">---
+</span><span>
+</span><span>hello world
+</span><span style="color:#8fa1b3;">===========
+</span><span>
+</span><span>&lt;</span><span style="color:#bf616a;">this_is </span><span style="color:#d08770;">inline</span><span>=&quot;</span><span style="color:#a3be8c;">xml</span><span>&quot;&gt;&lt;/</span><span style="color:#bf616a;">this_is</span><span>&gt;
+</span><span>
+</span><span style="color:#d08770;">&gt; markdown is so cool
+</span><span>
+</span><span>    so are code segments
+</span><span>
+</span><span style="color:#bf616a;">1. one thing (yeah!)
+</span><span style="color:#bf616a;">2. two thing </span><span style="color:#a3be8c;">`i can write code`</span><span style="color:#bf616a;">, and </span><span style="color:#a3be8c;">`more`</span><span style="color:#bf616a;"> wipee!
+</span></code></pre>
+<h3 id="python">python</h3>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span>@</span><span style="color:#bf616a;">requires_authorization</span><span>(</span><span style="color:#bf616a;">roles</span><span>=[&quot;</span><span style="color:#a3be8c;">ADMIN</span><span>&quot;])
+</span><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">somefunc</span><span>(</span><span style="color:#bf616a;">param1</span><span>=&#39;&#39;, </span><span style="color:#bf616a;">param2</span><span>=</span><span style="color:#d08770;">0</span><span>):
+</span><span>    </span><span style="color:#b48ead;">r</span><span style="color:#65737e;">&#39;&#39;&#39;A docstring&#39;&#39;&#39;
+</span><span>    </span><span style="color:#b48ead;">if </span><span>param1 &gt; param2: </span><span style="color:#65737e;"># interesting
+</span><span>        </span><span style="color:#b48ead;">print </span><span>&#39;</span><span style="color:#a3be8c;">Gre</span><span style="color:#96b5b4;">\&#39;</span><span style="color:#a3be8c;">ater</span><span>&#39;
+</span><span>    </span><span style="color:#b48ead;">return </span><span>(param2 - param1 + </span><span style="color:#d08770;">1 </span><span>+ </span><span style="color:#d08770;">0b10</span><span style="color:#b48ead;">l</span><span>) or </span><span style="color:#d08770;">None
+</span><span>
+</span><span style="color:#b48ead;">class </span><span style="color:#ebcb8b;">SomeClass</span><span style="color:#eff1f5;">:
+</span><span>    </span><span style="color:#b48ead;">pass
+</span><span>
+</span><span>&gt;&gt;&gt; message = &#39;&#39;&#39;</span><span style="color:#a3be8c;">interpreter
+</span><span style="color:#a3be8c;">... prompt</span><span>&#39;&#39;&#39;
+</span></code></pre>
+<h3 id="r">R</h3>
+<pre data-lang="R" style="background-color:#2b303b;color:#c0c5ce;" class="language-R "><code class="language-R" data-lang="R"><span style="color:#96b5b4;">require</span><span>(stats)
+</span><span>
+</span><span style="color:#65737e;">#&#39; Compute different averages
+</span><span style="color:#65737e;">#&#39;
+</span><span style="color:#65737e;">#&#39; </span><span style="color:#b48ead;">@param </span><span style="color:#bf616a;">x</span><span style="color:#65737e;"> \code{numeric} vector of sample data
+</span><span style="color:#65737e;">#&#39; </span><span style="color:#b48ead;">@param </span><span style="color:#bf616a;">type</span><span style="color:#65737e;"> \code{character} vector of length 1 specifying the average type
+</span><span style="color:#65737e;">#&#39; </span><span style="color:#b48ead;">@return</span><span style="color:#65737e;"> \code{centre} returns the sample average according to the chosen method.
+</span><span style="color:#65737e;">#&#39; </span><span style="color:#b48ead;">@examples
+</span><span style="color:#65737e;">#&#39; centre(rcauchy(10), &quot;mean&quot;)
+</span><span style="color:#65737e;">#&#39; </span><span style="color:#b48ead;">@export
+</span><span style="color:#8fa1b3;">centre </span><span>&lt;- </span><span style="color:#b48ead;">function</span><span>(</span><span style="color:#bf616a;">x</span><span>, </span><span style="color:#bf616a;">type</span><span>) {
+</span><span>  </span><span style="color:#96b5b4;">switch</span><span>(type,
+</span><span>         </span><span style="color:#bf616a;">mean </span><span>= </span><span style="color:#96b5b4;">mean</span><span>(x),
+</span><span>         </span><span style="color:#bf616a;">median </span><span>= </span><span style="color:#96b5b4;">median</span><span>(x),
+</span><span>         </span><span style="color:#bf616a;">trimmed </span><span>= </span><span style="color:#96b5b4;">mean</span><span>(x, </span><span style="color:#bf616a;">trim </span><span>= </span><span style="color:#d08770;">.1</span><span>))
+</span><span>}
+</span><span>x &lt;- </span><span style="color:#96b5b4;">rcauchy</span><span>(</span><span style="color:#d08770;">10</span><span>)
+</span><span style="color:#bf616a;">centre</span><span>(x, &quot;</span><span style="color:#a3be8c;">mean</span><span>&quot;)
+</span><span>
+</span><span style="color:#96b5b4;">library</span><span>(ggplot2)
+</span><span>
+</span><span>models &lt;- tibble::</span><span style="color:#bf616a;">tribble</span><span>(
+</span><span>  </span><span style="color:#b48ead;">~</span><span>model_name,    </span><span style="color:#b48ead;">~</span><span> formula,
+</span><span>  &quot;</span><span style="color:#a3be8c;">length-width</span><span>&quot;, Sepal.Length </span><span style="color:#b48ead;">~</span><span> Petal.Width + Petal.Length,
+</span><span>  &quot;</span><span style="color:#a3be8c;">interaction</span><span>&quot;,  Sepal.Length </span><span style="color:#b48ead;">~</span><span> Petal.Width * Petal.Length
+</span><span>)
+</span><span>
+</span><span>iris %&gt;%
+</span><span>  </span><span style="color:#bf616a;">nest_by</span><span>(Species) %&gt;%
+</span><span>  </span><span style="color:#bf616a;">left_join</span><span>(models, </span><span style="color:#bf616a;">by </span><span>= </span><span style="color:#b48ead;">character</span><span>()) %&gt;%
+</span><span>  </span><span style="color:#bf616a;">rowwise</span><span>(Species, model_name) %&gt;%
+</span><span>  </span><span style="color:#bf616a;">mutate</span><span>(</span><span style="color:#bf616a;">model </span><span>= </span><span style="color:#b48ead;">list</span><span>(</span><span style="color:#96b5b4;">lm</span><span>(formula, </span><span style="color:#bf616a;">data </span><span>= data))) %&gt;%
+</span><span>  </span><span style="color:#bf616a;">summarise</span><span>(broom::</span><span style="color:#bf616a;">glance</span><span>(model))
+</span><span style="color:#65737e;">#&gt; `summarise()` regrouping output by &#39;Species&#39;, &#39;model_name&#39; (override with `.groups` argument)
+</span><span style="color:#65737e;">#&gt; # A tibble: 6 x 13
+</span><span style="color:#65737e;">#&gt; # Groups:   Species, model_name [6]
+</span><span style="color:#65737e;">#&gt;   Species model_name r.squared adj.r.squared sigma statistic  p.value    df
+</span><span style="color:#65737e;">#&gt;   &lt;fct&gt;   &lt;chr&gt;          &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;int&gt;
+</span><span style="color:#65737e;">#&gt; 1 setosa  length-wi…     0.112        0.0739 0.339      2.96 6.18e- 2     3
+</span><span style="color:#65737e;">#&gt; 2 setosa  interacti…     0.133        0.0760 0.339      2.34 8.54e- 2     4
+</span><span style="color:#65737e;">#&gt; 3 versic… length-wi…     0.574        0.556  0.344     31.7  1.92e- 9     3
+</span><span style="color:#65737e;">#&gt; 4 versic… interacti…     0.577        0.549  0.347     20.9  1.11e- 8     4
+</span><span style="color:#65737e;">#&gt; 5 virgin… length-wi…     0.747        0.736  0.327     69.3  9.50e-15     3
+</span><span style="color:#65737e;">#&gt; 6 virgin… interacti…     0.757        0.741  0.323     47.8  3.54e-14     4
+</span><span style="color:#65737e;">#&gt; # … with 5 more variables: logLik &lt;dbl&gt;, AIC &lt;dbl&gt;, BIC &lt;dbl&gt;, deviance &lt;dbl&gt;,
+</span><span style="color:#65737e;">#&gt; #   df.residual &lt;int&gt;
+</span></code></pre>
+
+
+      </main>
+    </section>
+    <footer class="footer">
+      <p>© Yuki Matsuda, 2025</p>
+    </footer>
+  </div>
+</body>
+
+</html>
