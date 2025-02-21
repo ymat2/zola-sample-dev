@@ -3,9 +3,19 @@ title = "Markdown"
 +++
 
 
-- <https://guides.github.com/features/mastering-markdown/>
-- <https://github.github.com/gfm/>
+<https://commonmark.org/>
 
+
+## Headings
+
+```md
+# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+```
 
 # h1 Heading
 ## h2 Heading
@@ -17,6 +27,14 @@ title = "Markdown"
 
 ## Horizontal Rules
 
+```md
+___
+
+---
+
+***
+```
+
 ___
 
 ---
@@ -24,18 +42,19 @@ ___
 ***
 
 
-## Typographic replacements
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,,  -- ---
-
-"Smartypants, double quotes" and 'single quotes'
-
-
 ## Emphasis
+
+```md
+**This is bold text**
+
+__This is bold text__
+
+*This is italic text*
+
+_This is italic text_
+
+~~Strikethrough~~
+```
 
 **This is bold text**
 
@@ -50,6 +69,11 @@ _This is italic text_
 
 ## Blockquotes
 
+```md
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+> > > ...or with spaces between arrows.
+```
 
 > Blockquotes can also be nested...
 >> ...by using additional greater-than signs right next to each other...
@@ -58,7 +82,17 @@ _This is italic text_
 
 ## Lists
 
-Unordered
+### Unordered
+
+```md
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
++ Very easy!
+```
 
 + Create a list by starting a line with `+`, `-`, or `*`
 + Sub-lists are made by indenting 2 spaces:
@@ -68,7 +102,17 @@ Unordered
     - Nulla volutpat aliquam velit
 + Very easy!
 
-Ordered
+### Ordered
+
+```md
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+
+1. You can use sequential numbers...
+1. ...or keep all the numbers as `1.`
+```
 
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
@@ -78,12 +122,22 @@ Ordered
 1. You can use sequential numbers...
 1. ...or keep all the numbers as `1.`
 
-Start numbering with offset:
+### Start numbering with offset:
+
+```md
+57. foo
+1. bar
+```
 
 57. foo
 1. bar
 
-Task list:
+### Task list:
+
+```md
+- [ ] to be done
+- [x] done!
+```
 
 - [ ] to be done
 - [x] done!
@@ -91,9 +145,20 @@ Task list:
 
 ## Code
 
+```md
+Inline `code`
+```
+
 Inline `code`
 
-Indented code
+### Indented code
+
+```md
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+```
 
     // Some comments
     line 1 of code
@@ -101,13 +166,29 @@ Indented code
     line 3 of code
 
 
-Block code "fences"
+### Block code "fences"
+
+````md
+```
+Sample text here...
+```
+````
 
 ```
 Sample text here...
 ```
 
-Syntax highlighting
+### Syntax highlighting
+
+````md
+``` js
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+```
+````
 
 ``` js
 var foo = function (bar) {
@@ -117,24 +198,35 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
+
 ## Tables
 
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+```md
+| Option | No.    | Description  |
+| ------ | -----: | :----------- |
+| data   |     01 | path to data files to supply the data that will be passed into templates. |
+| engine |     02 | engine to be used for processing templates. Handlebars is the default. |
+| ext    |     03 | extension to be used for dest files. |
+```
 
-Right aligned columns
-
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+| Option | No.    | Description  |
+| ------ | -----: | :----------- |
+| data   |     01 | path to data files to supply the data that will be passed into templates. |
+| engine |     02 | engine to be used for processing templates. Handlebars is the default. |
+| ext    |     03 | extension to be used for dest files. |
 
 
 ## Links
+
+```md
+Auto-link: https://github.com/
+
+Explicit link: <https://github.com/>
+
+[link text](https://github.com/)
+
+[link with title](https://github.com/ "title text!")
+```
 
 Auto-link: https://github.com/
 
@@ -147,13 +239,8 @@ Explicit link: <https://github.com/>
 
 ## Images
 
+```md
 ![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+```
 
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+![Minion](https://octodex.github.com/images/minion.png)

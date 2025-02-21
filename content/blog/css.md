@@ -1,84 +1,98 @@
 +++
-title = "CSSの効き方"
+title = "CSS examples"
 +++
 
 
 ## Font-weight
 
 <div style="font-weight:normal;">
+
 font-weight: normal; ふつう
+
 </div>
 
 <div style="font-weight:bold;">
+
 font-weight: bold; ふとい
+
 </div>
 
 <div style="font-weight:200;">
+
 font-weight: 200; ほそい
+
 </div>
 
 <div style="font-weight:400;">
+
 font-weight: 400; ふつう
+
 </div>
 
 <div style="font-weight:600;">
+
 font-weight: 600; ふとめ
+
 </div>
 
 <div style="font-weight:800;">
+
 font-weight: 800; ふとい
+
 </div>
 
 
 ## Font family
 
-### 和文フォント
-
-<div style="font-family: sans-serif;">
-font-family: sans-serif; 総称サンセリフ, *総称サンセリフ*, **総称サンセリフ**
-</div>
-
-<div style="font-family: system-ui;">
-font-family: system-ui; システム UI, *システム UI*, **システム UI**
-</div>
-
-<div style="font-family: 'Yu Gothic';">
-font-family: 'Yu Gothic'; 游ゴシック, *游ゴシック*, **游ゴシック**
-</div>
-
-<div style="font-family: 'Yu Gothic Medium';">
-font-family: 'Yu Gothic Medium'; 游ゴ・ミディアム, *游ゴ・ミディアム*, **游ゴ・ミディアム**
-</div>
-
-<div style="font-family: 'Noto Sans JP';">
-font-family: 'Noto Sans JP'; ノー豆腐, *ノー豆腐*, **ノー豆腐**
-</div>
-
-<div style="font-family: 'BIZ UDGothic';">
-font-family: 'BIZ UDGothic'; BIZ UD ゴシック, *BIZ UD ゴシック*, **BIZ UD ゴシック**
-</div>
-
-### 欧文フォント
-
-<div style="font-family: 'Helvetica';">
-font-family: 'Helvetica'; Helvetica, *Helvetica*, **Helvetica**
-</div>
+This theme uses the fonts below in the following order:
 
 <div style="font-family: 'Segoe UI';">
+
 font-family: 'Segoe UI'; Segoe UI, *Segoe UI*, **Segoe UI**
+
+</div>
+
+<div style="font-family: 'Helvetica';">
+
+font-family: 'Helvetica'; Helvetica, *Helvetica*, **Helvetica**
+
 </div>
 
 <div style="font-family: 'Arial';">
+
 font-family: 'Arial'; Arial, *Arial*, **Arial**
+
 </div>
 
-<div style="font-family: 'Avenir Next LT Pro';">
-font-family: 'Avenir Next LT Pro'; Avenir Next, *Avenir Next*, **Avenir Next**
+<div style="font-family: 'Noto Sans JP';">
+
+font-family: 'Noto Sans JP'; ノー豆腐, *ノー豆腐*, **ノー豆腐**
+
 </div>
 
-## h2のなかの `code` 要素
+<div style="font-family: 'Yu Gothic';">
 
-こっちは普通の `inline code` の見た目。
+font-family: 'Yu Gothic'; 游ゴシック, *游ゴシック*, **游ゴシック**
+
+</div>
+
+<div style="font-family: 'Yu Gothic Medium';">
+
+font-family: 'Yu Gothic Medium'; 游ゴ・ミディアム, *游ゴ・ミディアム*, **游ゴ・ミディアム**
+
+</div>
+
+<div style="font-family: sans-serif;">
+
+font-family: sans-serif; 総称サンセリフ, *総称サンセリフ*, **総称サンセリフ**
+
+</div>
+
+<div style="font-family: system-ui;">
+
+font-family: system-ui; システム UI, *システム UI*, **システム UI**
+
+</div>
 
 
 ## Syntax highlight
