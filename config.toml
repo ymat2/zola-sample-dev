@@ -1,0 +1,14 @@
+base_url = "https://example.com"
+title = "zola sample page"
+author = "Yuki Matsuda"
+compile_sass = true
+build_search_index = false
+output_dir = "docs"
+ignored_content = []
+
+[markdown]
+highlight_code = true
+render_emoji = true
+
+[extra]
+# Put all your custom variables here
