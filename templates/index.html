@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
+
 <h1 class="title">
-  This is my blog made with Zola.
+  {{ section.title | safe }}
 </h1>
-<p>Hello, World!</p>
+
+{{ section.content | safe }}
+
 {% endblock content %}
