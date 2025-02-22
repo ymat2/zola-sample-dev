@@ -2,6 +2,8 @@
 title = "Sample Slide"
 +++
 
+<section>
+
 ## Hello, There
 
 This presentation will show you examples of what you can do with Quarto and [Reveal.js](https://revealjs.com), including:
@@ -14,6 +16,9 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 
 ...and much more
 
+</section>
+
+<section>
 
 ## Pretty Code {auto-animate="true"}
 
@@ -31,6 +36,9 @@ function(input, output) {
 }
 ```
 
+</section>
+
+<section>
 
 ## Code Animations {auto-animate="true"}
 
@@ -52,6 +60,9 @@ function(input, output) {
 }
 ```
 
+</section>
+
+<section>
 
 ## Line Highlighting
 
@@ -70,3 +81,5 @@ ax.set_rticks([0.5, 1, 1.5, 2])
 ax.grid(True)
 plt.show()
 ```
+
+</section>
