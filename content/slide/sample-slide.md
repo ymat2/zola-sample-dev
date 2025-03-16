@@ -2,7 +2,6 @@
 title = "Sample Slide"
 +++
 
-<section>
 
 ## Hello, There
 
@@ -16,16 +15,14 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 
 ...and much more
 
-</section>
-
-<section>
+---
 
 ## Pretty Code {auto-animate="true"}
 
 -   Over 20 syntax highlighting themes available
 -   Default theme optimized for accessibility
 
-``` r
+```r
 # Define a server for the Shiny app
 function(input, output) {
 
@@ -36,9 +33,7 @@ function(input, output) {
 }
 ```
 
-</section>
-
-<section>
+---
 
 ## Code Animations {auto-animate="true"}
 
@@ -60,16 +55,14 @@ function(input, output) {
 }
 ```
 
-</section>
-
-<section>
+---
 
 ## Line Highlighting
 
 -   Highlight specific lines for emphasis
 -   Incrementally highlight additional lines
 
-``` {python code-line-numbers="4-5|7|10"}
+```python,hl_lines=4-5 7 10
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -81,5 +74,3 @@ ax.set_rticks([0.5, 1, 1.5, 2])
 ax.grid(True)
 plt.show()
 ```
-
-</section>

@@ -6,14 +6,16 @@
 
 		<title>Sample Slide</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-      <section>
-<h2 id="hello-there">Hello, There</h2>
+        
+          <section>
+            <h2 id="hello-there">Hello, There</h2>
 <p>This presentation will show you examples of what you can do with Quarto and <a href="https://revealjs.com">Reveal.js</a>, including:</p>
 <ul>
 <li>Presenting code and LaTeX equations</li>
@@ -23,8 +25,11 @@
 <li>Activating scroll view</li>
 </ul>
 <p>...and much more</p>
-</section>
-<section>
+
+          </section>
+        
+          <section>
+            
 <h2 id="pretty-code">Pretty Code</h2>
 <ul>
 <li>Over 20 syntax highlighting themes available</li>
@@ -39,8 +44,11 @@
 </span><span>  })
 </span><span>}
 </span></code></pre>
-</section>
-<section>
+
+          </section>
+        
+          <section>
+            
 <h2 id="code-animations">Code Animations</h2>
 <ul>
 <li>Over 20 syntax highlighting themes available</li>
@@ -59,38 +67,36 @@
 </span><span>  })
 </span><span>}
 </span></code></pre>
-</section>
-<section>
+
+          </section>
+        
+          <section>
+            
 <h2 id="line-highlighting">Line Highlighting</h2>
 <ul>
 <li>Highlight specific lines for emphasis</li>
 <li>Incrementally highlight additional lines</li>
 </ul>
-<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>import numpy as np
-</span><span>import matplotlib.pyplot as plt
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#b48ead;">import </span><span>numpy </span><span style="color:#b48ead;">as </span><span>np
+</span><span style="color:#b48ead;">import </span><span>matplotlib.pyplot </span><span style="color:#b48ead;">as </span><span>plt
 </span><span>
-</span><span>r = np.arange(0, 2, 0.01)
-</span><span>theta = 2 * np.pi * r
-</span><span>fig, ax = plt.subplots(subplot_kw={&#39;projection&#39;: &#39;polar&#39;})
-</span><span>ax.plot(theta, r)
-</span><span>ax.set_rticks([0.5, 1, 1.5, 2])
-</span><span>ax.grid(True)
-</span><span>plt.show()
-</span></code></pre>
-</section>
+</span><mark style="background-color:#65737e30;"><span>r = np.</span><span style="color:#bf616a;">arange</span><span>(</span><span style="color:#d08770;">0</span><span>, </span><span style="color:#d08770;">2</span><span>, </span><span style="color:#d08770;">0.01</span><span>)
+</span></mark><mark style="background-color:#65737e30;"><span>theta = </span><span style="color:#d08770;">2 </span><span>* np.pi * r
+</span></mark><span>fig, ax = plt.</span><span style="color:#bf616a;">subplots</span><span>(</span><span style="color:#bf616a;">subplot_kw</span><span>={&#39;</span><span style="color:#a3be8c;">projection</span><span>&#39;: &#39;</span><span style="color:#a3be8c;">polar</span><span>&#39;})
+</span><mark style="background-color:#65737e30;"><span>ax.</span><span style="color:#bf616a;">plot</span><span>(theta, r)
+</span></mark><span>ax.</span><span style="color:#bf616a;">set_rticks</span><span>([</span><span style="color:#d08770;">0.5</span><span>, </span><span style="color:#d08770;">1</span><span>, </span><span style="color:#d08770;">1.5</span><span>, </span><span style="color:#d08770;">2</span><span>])
+</span><span>ax.</span><span style="color:#bf616a;">grid</span><span>(</span><span style="color:#d08770;">True</span><span>)
+</span><mark style="background-color:#65737e30;"><span>plt.</span><span style="color:#bf616a;">show</span><span>()
+</span></mark></code></pre>
 
+          </section>
+        
 			</div>
 		</div>
 
     <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
-		<script>
-			Reveal.initialize({
-				hash: true,
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
+    <script>
+      Reveal.initialize();
 		</script>
 	</body>
 </html>
