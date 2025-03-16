@@ -8,13 +8,13 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/{{ config.extra.revealjs_theme }}.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
         {% for slide in page.content | split(pat="<hr />") %}
-          <section>
+          <section data-transition="{{ config.extra.revealjs_transition }}">
             {{ slide | safe }}
           </section>
         {% endfor %}

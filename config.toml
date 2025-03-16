@@ -12,3 +12,6 @@ render_emoji = true
 
 [extra]
 # Put all your custom variables here
+
+revealjs_theme = "white"
+revealjs_transition = "none"
