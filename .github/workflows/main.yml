@@ -1,10 +1,9 @@
-name: Zola
+name: Build and deploy GH Pages
 
 on:
   push:
     branches: [ main ]
 
-name: Build and deploy GH Pages
 jobs:
   build:
     runs-on: ubuntu-latest
