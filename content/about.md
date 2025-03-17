@@ -1,6 +1,6 @@
 +++
 title = "About"
-template = "about.html"
+template = "page.html"
 +++
 
 Hello, my name is ymat2!

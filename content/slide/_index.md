@@ -1,6 +1,6 @@
 +++
 title = "Slides"
 sort_by = "title"
-template = "slide.html"
+template = "section.html"
 page_template = "slide-page-revealjs.html"
 +++

@@ -34,20 +34,29 @@
 <p class="subtitle"><strong></strong></p>
 <h2 id="slides">Slides</h2>
 <ul>
-<li><input disabled="" type="checkbox"/>
-スライドの区切りに <code>&lt;section&gt;</code> タグが必要</li>
-<li><input disabled="" type="checkbox"/>
-コードブロックがパースされない</li>
-</ul>
+<li>
+<p><input disabled="" type="checkbox"/>
+responsive design (for small display)</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"/>
+Use tera variables c.f. <code>theme.toml</code></p>
+</li>
+<li>
+<p><input disabled="" type="checkbox" checked=""/>
+スライドの区切りに <code>&lt;section&gt;</code> タグが必要</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox" checked=""/>
+コードブロックがパースされない</p>
 <p>これらはおそらく markdown の contents を zola がどう parse するかの問題で、
 現状 <code>{{ page.content }}</code> で parse 済みの HTML が拾われるため。</p>
-<p>zola の高速? parse を生かしつつ、reveal.js の記法に従わせられればいいのだけど。。。
-(shortcode?)</p>
-<p>あるいはほとんどの機能を zola のやつを使うという手もある？
--&gt; <code>highlight.js</code>, <code>markdown.js</code> を無効化してクリア</p>
-<ul>
-<li><input disabled="" type="checkbox"/>
-<code>https://cdn.jsdelivr.net/npm/reveal.js</code> でいいのか</li>
+<p>-&gt; <code>highlight.js</code>, <code>markdown.js</code> を無効化してクリア</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"/>
+<code>https://cdn.jsdelivr.net/npm/reveal.js</code> でいいのか</p>
+</li>
 </ul>
 
 
