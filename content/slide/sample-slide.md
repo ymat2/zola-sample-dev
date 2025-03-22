@@ -3,7 +3,7 @@ title = "Sample Slide"
 +++
 
 <style type="text/css">
-  h2,p,ul { text-align: left; }
+  .reveal .slides { text-align: left; }
 </style>
 
 ## Hello, There
